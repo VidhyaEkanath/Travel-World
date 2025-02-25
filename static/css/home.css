@@ -1,0 +1,140 @@
+section{
+    background-image: url('/static/image/converted-backgroundd.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+img{
+    height: 70px;
+    width: 230px;
+}
+#nav{
+    background: linear-gradient(to right,rgb(6, 163, 236) , rgb(75, 180, 229) ,rgb(93, 183, 218));
+    font-size: larger;
+    margin-top: -55px;
+}
+#ab{
+    padding-left: 65%;
+    text-decoration: none;
+    color: rgb(14, 2, 55);
+}
+.nav{
+    padding-left: 20px;
+    text-decoration: none;
+    color: rgb(14, 2, 55);
+}
+#we{
+    background: linear-gradient(to right , rgb(245, 112, 3) , rgb(248, 223, 208) , rgb(245, 112, 3));
+    margin-top: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(13, 8, 1);
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+#tr{
+    font-style: italic;
+    margin-left: -60px;
+}
+#ek{
+    letter-spacing: 5px;
+}
+#para{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-bottom: 5%;
+}
+#why{
+    margin-top: 5%;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.r{
+    height: 10vh;
+    width: 60px;
+    margin-left: 18%;
+}
+.l{
+    height: 10vh;
+    width: 60px;
+    margin-left: 15%;
+}
+.s{
+    height: 10vh;
+    width: 60px;
+    margin-left: 15%;
+}
+.p{
+    height: 10vh;
+    width: 8vw;
+    margin-left: 15%;
+}
+.res{
+    margin-left: 17%;
+}
+.low{
+    margin-left: 37%;
+    margin-top: -6vh;
+}
+.sec{
+    margin-left: 56%;
+    margin-top: -6vh;
+}
+.pic{
+    margin-left: 78%;
+    margin-top: -6vh;
+}
+.insta{
+    height: 30px;
+    width: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.fb{
+    height: 30px;
+    width: 50px;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+.link{
+    height: 30px;
+    width: 40px;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+.yt{
+    height: 30px;
+    width: 40px;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+.logo{
+    padding-top: 7%;
+    padding-bottom: 18px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+.mail{
+    float: right;
+    margin-right: 10%;
+}
+.call{
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+}
+.number{
+    margin-left: 23%;
+    margin-top: -25px;
+}

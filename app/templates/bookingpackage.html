@@ -1,0 +1,37 @@
+{% extends 'vendor.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <header>
+        <img src="/static/image/logo.png" alt="LOGO" class="img">
+        <h3 class="welcome">Welcome {{ vendor.Username }}</h3>
+        <nav>
+            <a href="{% url 'bookingdetails' %}" >Booking_Details</a>
+            <a href="{% url 'vdlogout' %}" >Logout</a>
+        </nav>
+    </header>
+    <br> <br> <br>
+    <a href="{% url 'bookingdetails' %}" class="back">Back</a>
+    <br>
+        <dl>
+            <dt>
+                <div class="dt">
+                    <img src="{{ package.Image_related_to_package.url }}" alt="imagee" class="packimage">
+                    <h3 class="location"> {{ package.Package_place }} </h3>
+                    <ul>
+                        <li> {{ package.days_stay }} Days package </li> <br>
+                        <li>Price per person is only {{package.price_per_person}} </li> <br> 
+                        <li>Booking cannot be cancelled and is non-refundable</li> <br>
+                    </ul>
+                </div>
+            </dt>
+        </dl>
+    {% endblock %}
+</body>
+</html>

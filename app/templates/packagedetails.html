@@ -1,0 +1,31 @@
+{% extends 'vendor.html' %}
+{% block title %}
+    <title>Adding Package Details</title>
+{% endblock %}
+{% block content %}
+<header>
+    <img src="/static/image/logo.png" alt="LOGO">
+    <h3 class="welcome">Welcome {{ vendor.Username }}</h3>
+    <nav>
+        <a href="{% url 'vendor' %}">Home</a>
+        <a href="{% url 'bookingdetails' %}">Booking_Details</a>
+        <a href="{% url 'vdlogout' %}">Logout</a>
+    </nav>
+</header>
+<br>
+<h3>You can add package details here ...</h3>
+<a href="{% url 'back' %}" class="back">Back</a>
+<br>
+<div class="packagedetails">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" onclick="addpackage" class="submit">SUBMIT</button>
+        <script>
+            function addpackage(){
+                alert("Package Added Successfully");
+            }
+        </script>
+    </form>
+</div>
+{% endblock %}

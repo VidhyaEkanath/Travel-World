@@ -1,0 +1,21 @@
+{% extends 'user.html' %}
+
+{% block title %}
+    <title>Payment</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <header>
+        <img src="/static/image/logo.png" alt="LOGO">
+        <h3 class="h4">Welcome {{ user.Username }}</h3>
+        <nav>
+            <a href="{% url 'home' %}"  class="logout">Logout</a>
+        </nav>
+    </header>
+    <br>
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PyVFS29UI3MeaS" async> </script> </form>
+
+</body>
+{% endblock %}
+

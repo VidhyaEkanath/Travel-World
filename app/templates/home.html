@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWorld</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <section>
+        <img src="/static/image/logo.png" alt="LOGO">
+        <div id="nav">
+            <a href="{% url 'about' %}" id="ab">About Us</a>
+            <a href="{% url 'blog' %}" class="nav">Blog</a>
+            <a href="{% url 'usregn' %}" class="nav">Register</a>
+            <a href="{% url 'log' %}" class="nav">Login</a>
+            <a href="{% url 'contact' %}" class="nav">Contact Us</a>
+        </div>
+    </section>
+    <div id="we">
+        <h3 id="tr">Welcome to our Travel World</h3>
+        <h1 id="ek">EKRUV</h1>
+        <p id="para">Plan your trip with us and travel around the world with the most affordable packages ...!!!</p>
+    </div>
+    <div id="why">
+        <h2>Why Us</h2>
+        <br> <br> <br>
+        <img src="/static/image/4428146.png" alt="Restaurant" class="r">
+        <img src="/static/image/7847564.png" alt="Low Price" class="l">
+        <img src="/static/image/7988550.png" alt="Secure Zone" class="s">
+        <img src="/static/image/car.avif" alt="Pick Up" class="p">
+        <h3 class="res">Restaurant</h3>
+        <h3 class="low">Low Price</h3>
+        <h3 class="sec">Secure Zone</h3>
+        <h3 class="pic">Pick Up</h3>
+    </div>
+    <br>
+    <footer>
+        <img src="/static/image/logo.png" alt="LOGO">
+        <div class="mail">
+            <p>Contact Us on <a href="">info@gmail.com</a> </p>
+            <img src="/static/image/calling.png" alt="CALL" class="call">
+            <p class="number">0123456789</p>
+        </div>
+        <div class="logo">
+            <p>Connect Us</p>
+            <img src="/static/image/instagram.jpg" alt="INSTAGRAM" class="insta" >
+            <img src="/static/image/facebook.png" alt="FACEBOOK" class="fb">
+            <img src="/static/image/linkedin.jpg" alt="LINKEDIN" class="link">
+            <img src="/static/image/youtube.png" alt="YOUTUBE" class="yt">
+        </div>
+    </footer>
+</body>
+</html>

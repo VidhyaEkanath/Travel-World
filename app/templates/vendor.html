@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Vendor Page</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/vendorr.css' %}">
+</head>
+<body>
+    {% block content %}
+    <header>
+        <img src="/static/image/logo.png" alt="LOGO" class="img">
+        <h3 class="welcome">Welcome {{ vendor.Username }}</h3>
+        <nav>
+            <a href="{% url 'bookingdetails' %}" >Booking_Details</a>
+            <a href="{% url 'vdlogout' %}" >Logout</a>
+        </nav>
+    </header>
+    <div>
+        <p class="addhere">If you add more packages</p>
+        <a href="{% url 'addpackage' %}" class="add">Click Here</a>
+    </div>
+    <br>
+    <div class="xy">
+        <form action="{% url 'approved' %}">
+            <button class="approved" type="submit">Approved Packages</button>
+        </form>
+        <br>
+        <form action="{% url 'pending' %}">
+            <button class="pending">Pending Packages</button>
+        </form>
+    </div>
+    <div class="bk">
+        <form action="">
+            <button class="booking">Booking Details</button>
+        </form>
+    </div>
+    <br> <br> <br><br> <br> <br>
+    
+        <dl>
+            <dt>
+                <div class="dt">
+                    <img src="{{ package.Image_related_to_package.url }}" alt="imagee" class="packimage">
+                    <h3 class="location"> {{ i.Package_place }} </h3>
+                    <ul>
+                        <li> {{ package.days_stay }} Days package </li> <br>
+                        <li>Price per person is only {{package.price_per_person}} </li> <br> 
+                        <li>Booking cannot be cancelled and is non-refundable</li> <br>
+                    </ul>
+                </div>
+                <dl>
+                    <dt class="ab">
+                        <p> Any changes in Package ...</p>
+                        <form action="{% url 'edit' i.pk %}" class="edt">
+                            <button>Edit</button>
+                        </form>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt class="de">
+                        <p class="delete"> Delete the Package ...</p>
+                        <form action="{% url 'del' i.pk %}" method="post" class="delt">
+                            {% csrf_token %}
+                            <button type="submit" > Delete </button>
+                        </form>
+                    </dt>
+                </dl>
+            </dt>
+        </dl>
+    
+    {% endblock %}
+</body>
+</html>

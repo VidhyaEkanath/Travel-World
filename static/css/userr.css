@@ -1,0 +1,58 @@
+header{
+    background-image: url('/static/image/user.png');
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+img{
+    height: 70px;
+    width: 230px;
+}
+nav{
+    background: linear-gradient(to right,rgb(171, 206, 218) , rgb(156, 204, 223) ,rgb(113, 201, 236));  
+    padding-left: 70%;
+    margin-left: 15%;
+    margin-right: 20px;
+    margin-top: -40px;
+    word-spacing: 20px;
+    font-size: large;
+}
+.h4{
+    padding-left: 79%;
+    margin-top: -50px;
+    word-spacing: 5px;
+    padding-top: -5px;
+}
+.logout{
+    padding-left: 53%;
+    padding-top: -80px;
+}
+a{
+    text-decoration: none;
+    color: rgb(14, 2, 55);
+}
+.dt{
+    display: flex;
+    margin-left: 25px;
+    background: linear-gradient(to left ,white , rgb(171, 247, 246) , white);
+}
+.location{
+    margin-left: 30px;
+}
+.ab{
+    float: right;
+    margin-top: -115px;
+    margin-right: 30px;
+}
+.packimage{
+    height: 20vh;
+    width: 15vw;
+}
+.bnow{
+    margin-left: 6%;
+    margin-top: 1%;
+    font-weight: bold;
+}
+.booking{
+    border: 1px solid #0c0c0c;
+    padding: 2%;
+}

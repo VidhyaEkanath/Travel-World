@@ -1,0 +1,60 @@
+header{
+    background-image: url('/static/image/converted-header.png');
+    background-repeat: no-repeat ;
+    background-position: top ;
+    height: 50vh;
+}
+img{
+    height: 70px;
+    width: 230px;
+}
+nav{
+    background: linear-gradient(to right, rgb(0, 0, 0),rgb(79, 77, 77),rgb(222, 219, 219),white);
+    padding-left: 55%;
+    margin-left: 20%;
+    margin-top: -40px;
+    word-spacing: 20px;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+}
+.ab{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #0c0c0c;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+.clk{
+    height: 50px;
+    padding-top: -10px;
+}
+.ur{
+    height: 30px;
+    width: 48%;
+    font-size: medium;
+    margin-right: 5%;
+}
+.vr{
+    height: 30px;
+    width: 45%;
+    font-size: medium;
+}
+.frm{
+    padding-right: 30%;
+    text-align: right;
+}
+.reg{
+    background-color: rgb(23, 190, 216);
+    font-size: large;
+    font-weight: bold;
+    width: 35%;
+    height: 25px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-right: 8%;
+}
+.email{
+    padding-left: 10%;
+}

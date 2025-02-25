@@ -1,0 +1,108 @@
+header{
+    background-image: url('/static/image/convertedd-vc.png');
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+.img{
+    height: 70px;
+    width: 230px;
+}
+nav{
+    background: linear-gradient(to right, rgb(139, 112, 94),rgb(189, 116, 61),rgb(211, 110, 22),rgb(252, 119, 3));
+    padding-left: 65%;
+    margin-left: 15%;
+    margin-right: 20px;
+    margin-top: -40px;
+    word-spacing: 10px;
+    font-size: large;
+}
+.welcome{
+    padding-left: 65%;
+    margin-top: -45px;
+    word-spacing: 5px;
+    padding-top: -5px;
+}
+.username{
+    padding-left: -15%;
+}
+a{
+    text-decoration: none;
+    color: rgb(14, 2, 55);
+}
+.dt{
+    display: flex;
+    margin-left: 25px;
+    background: linear-gradient(to left ,white , rgb(171, 247, 246) , white);
+}
+.location{
+    margin-left: 30px;
+}
+.ab{  
+    margin-top: -125px;
+    margin-left: 82% ;
+}
+.edt{
+    padding-left: 68%;
+    margin-top: -40px;
+}
+.de{
+    margin-left: 83%;
+    margin-top: 2%;
+}
+.delt{
+    margin-left: 61%;
+    margin-top: -35px;
+}
+.addhere{
+    margin-left: 82%;
+}
+.add{
+    float: right;
+    margin-top: -34px;
+    margin-right: 25px;
+}
+.xy{
+    float: right;
+    margin-top: -10px;
+    margin-right: 22px;
+}
+.back{
+    float: right;
+    text-decoration: underline;
+    margin-top: -40px;
+    margin-right: 25px;
+}
+.bk{
+    margin-top: -50px;
+}
+table{
+    margin-top: -30px;
+}
+.packagedetails{
+    border: 1px solid #0c0c0c;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.submit{
+    margin-left: 10%;
+    margin-top: 13px;
+    font-weight: bold;
+}
+.packimage{
+    height: 20vh;
+    width: 15vw;
+}
+th{
+    background-color: rgb(235, 243, 243);
+}
+th,td{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}

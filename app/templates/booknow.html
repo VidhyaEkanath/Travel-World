@@ -1,0 +1,26 @@
+{% extends 'user.html' %}
+
+{% block title %}
+    <title>BookNow</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <header>
+        <header>
+            <img src="/static/image/logo.png" alt="LOGO">
+            <h3 class="h4">Welcome {{ user.Username }}</h3>
+            <nav>
+                <a href="{% url 'home' %}"  class="logout">Logout</a>
+            </nav>
+        </header>
+    <br>
+    <br>
+    <form method="post" class="booking">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="bnow">SUBMIT</button>
+    </form>
+    
+</body>
+{% endblock %}
