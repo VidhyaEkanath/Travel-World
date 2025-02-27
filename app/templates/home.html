@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
-    <section>
+    <section class="section">
         <img src="/static/image/logo.png" alt="LOGO">
         <div id="nav">
             <a href="{% url 'about' %}" id="ab">About Us</a>
@@ -22,10 +22,20 @@
     <div id="we">
         <h3 id="tr">Welcome to our Travel World</h3>
         <h1 id="ek">EKRUV</h1>
-        <p id="para">Plan your trip with us and travel around the world with the most affordable packages ...!!!</p>
+        <p id="para">"Explore India with our budget-friendly packages and let us plan the perfect trip for you to experience the diverse landscapes and rich culture of the country."</p>
+    </div> <br> <br> <br>
+    <h2 class="h2">Our Most Popular Packages</h2>
+    <div class="packages">
+        {% for i in package %}
+        <div class="pknm">
+            <h3> {{ i.Package_place }} </h3>
+            <img src="{{ i.Image_related_to_package.url }}" alt="imagee" class="packageimage">
+        </div>
+        {% endfor %}
     </div>
+    <br>
     <div id="why">
-        <h2>Why Us</h2>
+        <h2 class="h2">Why Choose Us</h2>
         <br> <br> <br>
         <img src="/static/image/4428146.png" alt="Restaurant" class="r">
         <img src="/static/image/7847564.png" alt="Low Price" class="l">
@@ -37,6 +47,28 @@
         <h3 class="pic">Pick Up</h3>
     </div>
     <br>
+    <section class="india">
+        <div class="indiacontent">
+            <h2 class="indiahead">About Incredible India</h2>
+            <p>Interesting and Intriguing, India offers incredible holiday experiences through its cultural, topography, and wildlife diversity. With these amazing and unique experiences, this south Asian country conveniently finds its way into the world tourism map as one of the finest destinations for a holistic vacation. India establishes its identity as the country of architectural masterpieces, making it an ideal travel destination to plan a heritage tour in the world. While Taj Mahal makes for the major draw on an India tour, there are a plethora of monuments and edifices in every India travel guide displaying the fine architecture and grandiose of different eras in the country.</p>
+            <p>The diverse Indian topography adorned with the impressive Himalayas; long stretches of coastline; expansive hot, cold and white salt deserts; dense forests; alpine meadows and lakes; and scenic waterfalls pique the tourists’ interest. Along with the best nature sightseeing tours, India offers an opportunity to visitors to have a little adventure of their own. The numerous spell-binding and less-trodden trails give trekking tour opportunities in South Asia unlike any other.</p>
+            <p>India Tours offers a chance to explore its biodiversity in the country's many national parks and wildlife reserves. An enthralling experience entails in the India wildlife tour packages that take tourists to the habitats of Royal Bengal Tigers, one-horned rhinos, and snow leopards amongst many rare, endangered, and unique species of flora and fauna.</p>
+        </div>
+        <div>
+            <img src="/static/image/India.webp" alt="INDIA" class="indiaimg">
+        </div>
+    </section>
+    <section class="climate">
+        <div class="season">
+            <h3>India Climate & Season</h3>
+            <p>India experiences a diverse climate and weather conditions due to its vast size and geographical features. The country is characterized by five main seasons: Spring, Summer, Monsoon, Autumn, and Winter. The Summer season, from April to mid-June, brings scorching temperatures, especially in the northern plains. The Monsoon, from mid-June to September, brings heavy rainfall, crucial for agriculture. Winter, from November to February, varies from mild to severe cold, with snowfall in some regions. Autumn and Spring provide pleasant weather with moderate temperatures. India's climate is influenced by the Himalayas, oceans, and geographical variations, resulting in a rich and varied weather pattern.</p>
+        </div>
+        <div class="visa">
+            <h3>Visa Information</h3>
+            <p>Obtaining a visa for India is an essential step for foreign travelers planning to visit the country. India offers various visa categories, including tourist visas, business visas, and e-visas. The tourist visa allows visitors to explore India's rich cultural heritage, historical sites, and natural beauty. The e-visa is a convenient option that allows travelers to apply for their visa online, streamlining the process and reducing the wait time. To apply for an India visa, travelers need to submit necessary documents, such as a valid passport, travel itinerary, and recent photographs. Planning ahead and adhering to the application guidelines ensure a smooth visa process for a memorable trip to India.</p>
+        </div>
+
+    </section>
     <footer>
         <img src="/static/image/logo.png" alt="LOGO">
         <div class="mail">

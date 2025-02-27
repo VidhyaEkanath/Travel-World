@@ -27,7 +27,7 @@
             <td>{{ i.No_of_persons }}</td>
             <td>{{ i.package.Package_place }}</td>
             <td>
-                <a href="{% url 'bookedpackage' i.pk  %}">view package</a>
+                <a href="{% url 'bookedpackage' i.package_id  %}">view package</a>
             </td>            
         </tr>
         {% endfor %}

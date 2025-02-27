@@ -7,7 +7,8 @@
     {% block title %}
     <title>Vendor Page</title>
     {% endblock %}
-    <link rel="stylesheet" href="{% static 'css/vendorr.css' %}">
+    <link rel="stylesheet" href="{% static 'css/venndor.css' %}">
+    <script src="{% static 'js/vendor.js' %}"></script>    
 </head>
 <body>
     {% block content %}
@@ -35,7 +36,6 @@
     </div>
     <br> <br> <br><br> 
     {% for i in package %}
-    
         <dl>
             <dt>
                 <div class="dt">
@@ -47,23 +47,25 @@
                         <li>Booking cannot be cancelled and is non-refundable</li> <br>
                     </ul>
                 </div>
-                <dl>
-                    <dt class="ab">
-                        <p> Any changes in Package ...</p>
-                        <form action="{% url 'edit' i.pk %}" class="edt">
-                            <button>Edit</button>
-                        </form>
-                    </dt>
-                </dl>
-                <dl>
-                    <dt class="de">
-                        <p class="delete"> Delete the Package ...</p>
-                        <form action="{% url 'del' i.pk %}" method="post" class="delt">
-                            {% csrf_token %}
-                            <button type="submit" > Delete </button>
-                        </form>
-                    </dt>
-                </dl>
+                <div class="editdel">
+                    <dl>
+                        <dt class="ab">
+                            <p> Any changes in Package ...</p>
+                            <form action="{% url 'edit' i.pk %}" class="edt">
+                                <button>Edit</button>
+                            </form>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt class="de">
+                            <p class="delete"> Delete the Package ...</p>
+                            <form action="{% url 'del' i.pk %}" method="post" class="delt">
+                                {% csrf_token %}
+                                <button type="submit" onclick="deleted()"> Delete </button>
+                            </form>
+                        </dt>
+                    </dl>
+               </div>
             </dt>
         </dl>
     {% endfor %}

@@ -1,0 +1,129 @@
+header{
+    background-image: url('/static/image/converted-header.png');
+    background-repeat: no-repeat ;
+    background-position: top ;
+    height: 50vh;
+}
+img{
+    height: 70px;
+    width: 230px;
+}
+nav{
+    background: linear-gradient(to right, rgb(0, 0, 0),rgb(79, 77, 77),rgb(222, 219, 219),white);
+    padding-left: 55%;
+    margin-left: 20%;
+    margin-top: -40px;
+    word-spacing: 20px;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+}
+.ab{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #0c0c0c;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+.clk{
+    height: 50px;
+    padding-top: -10px;
+}
+.ur{
+    height: 30px;
+    width: 48%;
+    font-size: medium;
+    margin-right: 5%;
+}
+.vr{
+    height: 30px;
+    width: 45%;
+    font-size: medium;
+}
+.frm{
+    padding-right: 30%;
+    text-align: right;
+}
+.reg{
+    background-color: rgb(23, 190, 216);
+    font-size: large;
+    font-weight: bold;
+    width: 35%;
+    height: 25px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-right: 8%;
+}
+.email{
+    padding-left: 10%;
+}
+.aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 90%;
+    margin: 20px;
+}
+.aboutus img{
+    width: 35%;
+    height: 60%;
+    padding-left: 5%;
+}
+.aboutus p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2d2a2a;
+}
+.jammu{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 70%;
+    margin: 20px;
+    color: rgb(23, 22, 22);
+}
+.jammu img{
+    width: 280%;
+    height: 100%;
+    padding-left:50px ;
+}
+.buddha{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 70%;
+    margin: 20px;
+    color: rgb(23, 22, 22);
+}
+.buddha img{
+    width: 300%;
+    height: 100%;
+    padding-left:50px ;
+}
+.conus{
+    padding-left: 13%;
+}
+.address{
+    text-align: center;
+}
+.main{
+    margin-left: 38%;
+    margin-right: 38%;
+    padding-top: 1%;
+    background-color: rgb(238, 218, 193);
+}
+.main p{
+    padding-top: 15%;
+    padding-bottom: 25%;
+}
+.branch{
+    margin-left: 38%;
+    margin-right: 38%;
+    padding-top: 1%;
+    background-color: rgb(238, 218, 193);
+}
+.branch p{
+    padding-top: 15%;
+    padding-bottom: 25%;
+}

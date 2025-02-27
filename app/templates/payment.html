@@ -9,13 +9,13 @@
     <header>
         <img src="/static/image/logo.png" alt="LOGO">
         <h3 class="h4">Welcome {{ user.Username }}</h3>
-        <nav>
-            <a href="{% url 'home' %}"  class="logout">Logout</a>
+        <nav class="logout">
+            <a href="{% url 'user' %}"  class="home">Home</a>
+            <a href="{% url 'home' %}"  >Logout</a>
         </nav>
     </header>
     <br>
-    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PyVFS29UI3MeaS" async> </script> </form>
-
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Q0mT44wCw5LC1T" async> </script> </form>
 </body>
 {% endblock %}
 

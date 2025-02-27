@@ -7,17 +7,22 @@
     {% block title %}
     <title>User Page</title>
     {% endblock %}
-    <link rel="stylesheet" href="{% static 'css/userr.css' %}">
+    <link rel="stylesheet" href="{% static 'css/usser.css' %}">
 </head>
 {% block content %}
 <body>
     <header>
         <img src="/static/image/logo.png" alt="LOGO">
         <h3 class="h4">Welcome {{ user.Username }}</h3>
-        <nav>
-            <a href="{% url 'home' %}"  class="logout">Logout</a>
+        <nav class="logout">
+            <a href="{% url 'home' %}"  >Logout</a>
         </nav>
     </header>
+    <br>
+    <form action="{% url 'bookpackageview' %}">
+        {% csrf_token %}
+        <button>Booking_packages</button>
+    </form>
     <br>
     {% for i in package %}
     {% if i.is_approved %}

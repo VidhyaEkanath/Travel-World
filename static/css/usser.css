@@ -17,14 +17,14 @@ nav{
     font-size: large;
 }
 .h4{
-    padding-left: 79%;
+    padding-left: 65%;
     margin-top: -50px;
     word-spacing: 5px;
     padding-top: -5px;
 }
 .logout{
-    padding-left: 53%;
-    padding-top: -80px;
+    padding-left: 75%;
+    padding-top: -60px;
 }
 a{
     text-decoration: none;
@@ -55,4 +55,7 @@ a{
 .booking{
     border: 1px solid #0c0c0c;
     padding: 2%;
+}
+.back{
+    float: right;
 }

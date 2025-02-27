@@ -8,7 +8,8 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def home(request):
-    return render(request , 'home.html')
+    package = Package.objects.all()
+    return render(request , 'home.html' , {'package':package})
 
 def about(request):
     return render(request , 'about.html')
@@ -31,7 +32,6 @@ def vendor(request):
 def userpage(request):
     userr_id = request.session.get('user.id')
     user = Userregistration.objects.get(id=userr_id)
-    print(f'{user.Username}')
     package = Package.objects.all()
     return render(request,'user.html',{'user':user , 'package':package})
 
@@ -89,7 +89,6 @@ def vdlgin(request):
             Password = form.cleaned_data.get('Password')
             try:
                 vendor = Vendorregistration.objects.get(Username=Username)
-                print(f'{vendor.Username}')
                 if check_password(Password , vendor.Password):
                     request.session['vendor.id'] = vendor.id
                     return redirect('vendor')
@@ -186,8 +185,18 @@ def userbookingdetails(request):
     booking = Booknow.objects.filter(package__in=packages).select_related('package','user')
     return render(request , 'bookingdetails.html', {'vendor':vendor ,'booking':booking})
 
-def userbookingpackages(request,pk):
-    packages = get_object_or_404(Package,pk=pk)
+def userbookingpackages(request , package_id):
     vendor_id = request.session.get('vendor.id')
     vendor = Vendorregistration.objects.get(id=vendor_id)
-    return render(request , 'bookingpackage.html', {'vendor':vendor ,'package':packages})
+    vendorr = get_object_or_404(Vendorregistration ,id=vendor_id )
+    print(f'{vendorr}')
+    packages = get_object_or_404(Package , id=package_id ,vendor=vendorr.id)
+    booking =  Booknow.objects.filter(package=packages).select_related('user')
+    return render(request , 'bookingpackage.html', {'vendor':vendor ,'package':packages , 'booking':booking})
+
+def userpackages(request):
+    user_id = request.session.get('user.id')
+    user = Userregistration.objects.get(id=user_id)
+    booking = Booknow.objects.filter(user_id=user_id)
+    return render(request , 'userpackages.html',{'user':user , 'booking':booking})
+    

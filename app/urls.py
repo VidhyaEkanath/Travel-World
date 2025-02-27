@@ -24,7 +24,8 @@ urlpatterns = [
     path('booknow/<int:pk>/package/' , v.booknow , name="booknow"),
     path('payment/' , v.payment , name="payment"),
     path('bookingdetails/' , v.userbookingdetails , name="bookingdetails"),
-    path('userbookingpackages/<int:pk>/packagess/' , v.userbookingpackages , name="bookedpackage"),
+    path('userbookingpackages/<int:package_id>/packagess/' , v.userbookingpackages , name="bookedpackage"),
+    path('userpackages/' , v.userpackages , name="bookpackageview"),
 ]
 
 
