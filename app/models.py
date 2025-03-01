@@ -31,10 +31,10 @@ class Package(models.Model):
 
 class Booknow(models.Model):
     package = models.ForeignKey(Package ,on_delete=models.CASCADE)
-    user = models.ForeignKey(Userregistration,models.CASCADE)
+    user = models.ForeignKey(Userregistration,on_delete=models.CASCADE)
     Full_Name = models.CharField(max_length=100)
     Contact_Number = models.CharField(max_length=15)
     Email = models.EmailField(default=0)
     No_of_persons = models.IntegerField()
     No_of_Childrens = models.CharField(max_length=50 , default=0)
-    Booking_reservation = models.CharField(max_length=50 , default=0)
+    Booking_reservation = models.DateField()

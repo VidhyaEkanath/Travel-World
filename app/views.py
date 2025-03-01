@@ -189,7 +189,6 @@ def userbookingpackages(request , package_id):
     vendor_id = request.session.get('vendor.id')
     vendor = Vendorregistration.objects.get(id=vendor_id)
     vendorr = get_object_or_404(Vendorregistration ,id=vendor_id )
-    print(f'{vendorr}')
     packages = get_object_or_404(Package , id=package_id ,vendor=vendorr.id)
     booking =  Booknow.objects.filter(package=packages).select_related('user')
     return render(request , 'bookingpackage.html', {'vendor':vendor ,'package':packages , 'booking':booking})
