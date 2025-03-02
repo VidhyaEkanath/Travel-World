@@ -20,12 +20,7 @@
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" onclick="addpackage" class="submit">SUBMIT</button>
-        <script>
-            function addpackage(){
-                alert("Package Added Successfully");
-            }
-        </script>
+        <button type="submit"  class="submit">SUBMIT</button>
     </form>
 </div>
 {% endblock %}
