@@ -20,7 +20,7 @@ a{
     text-decoration: none;
 }
 .ab{
-    background: rgba(255, 255, 255, 0.9);
+    background-color: #ecb66a;
     padding: 20px;
     border: 1px solid #0c0c0c;
     margin-left: 33%;
@@ -36,10 +36,16 @@ a{
     font-size: medium;
     margin-right: 5%;
 }
+.ur:active{
+    background-color: #faa835;
+}
 .vr{
     height: 30px;
     width: 45%;
     font-size: medium;
+}
+.vr:active{
+    background-color: #faa835;
 }
 .frm{
     padding-right: 30%;
@@ -126,4 +132,26 @@ a{
 .branch p{
     padding-top: 15%;
     padding-bottom: 25%;
+}
+.loginform{
+    background-color: #ecb66a;
+    margin-left: 38%;
+    margin-right: 38%;
+    margin-top: 3%;
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;  
+    border: 1px solid #0c0c0c;
+}
+.loginbutton{
+    margin-left: 35%;
+}
+.loginbutton:active{
+    background-color: #faa835;
+}
+.userlog:active{
+    background-color: #faa835;
+}
+.venderlogbutton:active{
+    background-color: #faa835;
 }
