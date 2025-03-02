@@ -72,7 +72,7 @@ def uslgin(request):
                 user = Userregistration.objects.get(Username=Username)
                 if check_password(Password , user.Password):
                     request.session['user.id'] = user.id
-                    return redirect('user')
+                    return redirect('userpage')
                 else:
                     return render(request , 'uslgin.html' , {'form':form , 'error':'Invalid Password'})
             except Userregistration.DoesNotExist:
