@@ -198,4 +198,3 @@ def userpackages(request):
     user = Userregistration.objects.get(id=user_id)
     booking = Booknow.objects.filter(user_id=user_id)
     return render(request , 'userpackages.html',{'user':user , 'booking':booking})
-    
