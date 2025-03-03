@@ -7,7 +7,7 @@
     {% block title %}
     <title>User Page</title>
     {% endblock %}
-    <link rel="stylesheet" href="{% static 'css/userhome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/userhomee.css' %}">
 </head>
 {% block content %}
 <body>
@@ -32,6 +32,7 @@
                     <div >
                         <h2 class="location"> {{ i.Package_place }}  </h2>
                         <img src="{{ i.Image_related_to_package.url }}" alt="imagee" class="packimage">
+                        <p class="descr">{{i.Description}} </p>
                     </div>
                     <div class="details">
                         <ul>

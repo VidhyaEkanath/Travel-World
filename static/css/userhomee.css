@@ -31,7 +31,8 @@ a{
     color: rgb(14, 2, 55);
 }
 .dt{
-    display: flex;
+    padding-top: 5px;
+    margin-top: 3%;
     margin-left: 25px;
     background: linear-gradient(to left ,white , rgb(171, 247, 246) , white);
 }
@@ -40,13 +41,12 @@ a{
 }
 .ab{
     float: right;
-    margin-top: -160px;
+    margin-top: -90px;
     margin-right: 30px;
 }
 .packimage{
-    
-    height: 25vh;
-    width: 20vw;
+    height: 28vh;
+    width: 22vw;
 }
 .bnow{
     margin-left: 6%;
@@ -60,16 +60,22 @@ a{
 .back{
     float: right;
 }
-.desc{
-    margin-left: 2%;
-    margin-right: 20%;
-    font-size: large;
-}
-.details{
-    padding-left: 2%;
-    padding-top: 5%;
-}
 .search{
     float: right;
     margin-top: -35px;
+}
+.descr{
+    padding-left: 25%;
+    margin-top: -150px;
+}
+.details{
+    margin-top: 3%;
+    margin-left: 24%;
+}
+.xyz{
+    display: flex;
+    background: linear-gradient(to left ,white , rgb(171, 247, 246) , white);
+}
+.abcd{
+    padding-top: 2%;
 }

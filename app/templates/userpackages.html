@@ -20,10 +20,10 @@
     {% for i in booking %}
         <dl>
             <dt>
-                <div class="dt">
+                <div class="xyz">
                     <img src="{{ i.package.Image_related_to_package.url }}" alt="imagee" class="packimage">
                     <h3 class="location"> {{ i.package.Package_place }} </h3>
-                    <ul>
+                    <ul class="abcd">
                         <li> {{ i.package.days_stay }} Days package </li> <br>
                         <li>Price per person is only {{i.package.price_per_person}} </li> <br> 
                         <li>Booking cannot be cancelled and is non-refundable</li> <br>
