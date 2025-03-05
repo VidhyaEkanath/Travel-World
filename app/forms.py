@@ -31,7 +31,7 @@ class Packagedetailsform(forms.ModelForm):
 class Booknowform(forms.ModelForm):
     class Meta:
         model = Booknow
-        fields = ['Full_Name' , 'Contact_Number' , 'Email' , 'No_of_persons' , 'No_of_Childrens' , 'Booking_reservation']
+        fields = ['Full_Name' , 'Contact_Number' , 'Email' , 'No_of_persons' , 'No_of_Childrens' , 'Booking_reservation_date']
         
 
 

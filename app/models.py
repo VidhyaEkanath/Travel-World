@@ -37,4 +37,4 @@ class Booknow(models.Model):
     Email = models.EmailField(default=0)
     No_of_persons = models.IntegerField()
     No_of_Childrens = models.CharField(max_length=50 , default=0)
-    Booking_reservation = models.DateField()
+    Booking_reservation_date = models.DateField()
